@@ -4,23 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fiber Spark Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffffff, #f3e6f9);
+      color: #4a004a;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: #800080;
+      color: white;
+    }
+    header img {
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1, h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    ul li {
+      background: white;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    ul li:hover {
+      transform: translateY(-5px);
+    }
+    .contact p {
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background: #800080;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #a020a0;
+    }
+    footer {
+      text-align: center;
       padding: 20px;
-      line-height: 1.6;
-      background: #ffffff; /* λευκό φόντο */
-      color: #800080; /* μωβ γράμματα */
-    }
-    header, footer { text-align: center; margin-bottom: 20px; }
-    h1, h2, p, li {
+      background: #f3e6f9;
       color: #800080;
-      text-shadow: none;
+      margin-top: 40px;
     }
-    section { margin-bottom: 20px; text-align: center; }
-    ul { padding-left: 20px; text-align: left; display: inline-block; }
-    footer p { color: #800080; text-shadow: none; }
   </style>
 </head>
 <body>
@@ -28,25 +80,24 @@
   <header>
     <h1>Fiber Spark Services</h1>
     <p>Καλώς ήρθατε στην επίσημη σελίδα μας</p>
- <img src="fiber.jpg" width="300">
-      </div>
-</header>
+    <img src="fiber.jpg" width="300" alt="Fiber Spark">
+  </header>
+
   <section>
     <h2>Υπηρεσίες</h2>
     <ul>
-      <li>Υπηρεσίες Διαχείρισης Δικτύων.</li>
-      <li>Αποκατάσταση βλαβών.</li>
-     <li>Μετατόπιση Ίνας.</li>
-      <li>Ηλεκτρολογικές εγκαταστάσεις.</li>
-         <li>Εγκατάσταση καμερών.</li>
-      
+      <li>Υπηρεσίες Διαχείρισης Δικτύων</li>
+      <li>Αποκατάσταση βλαβών</li>
+      <li>Μετατόπιση Ίνας</li>
+      <li>Ηλεκτρολογικές εγκαταστάσεις</li>
+      <li>Εγκατάσταση καμερών</li>
     </ul>
   </section>
 
-  <section>
+  <section class="contact">
     <h2>Επικοινωνία</h2>
-    <p>Τηλέφωνο: 6980355388 </p>
-    <p>Email: fibersparkservices@gmail.com </p>
+    <a href="tel:6980355388" class="btn">📞 Τηλέφωνο</a>
+    <a href="mailto:fibersparkservices@gmail.com" class="btn">✉️ Email</a>
   </section>
 
   <footer>
